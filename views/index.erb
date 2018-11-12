@@ -4,4 +4,10 @@
 </div>"
 
 <h1>My name is Cat</h1>
+<% if @name&&@surname %>
+<h2> But sometimes I go by: <%= @name + " " + @surname %> </h2>
+<% elsif @name%>
 <h2> But sometimes I go by: <%= @name %> </h2>
+<% elsif @surname %>
+<h2> But sometimes I go by: <%= @surname %> </h2>
+<% end %>
